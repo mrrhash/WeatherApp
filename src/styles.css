@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left,rgb(79, 13, 185),rgb(82, 158, 230));
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.container{
+  height: 80vh;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  background: rgb(58, 61, 214);
+}
+
+.upper-data{
+  height: 50%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.lower-data{
+  width: 100%;
+  height: 50%;
+  position: relative;
+  display: flex;
+  padding: 1em;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+  flex-direction: column;
+}
+.upper-data img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.weather-data{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.location{
+  color: white;
+  text-align: center;
+  font-size: 1.2em;
+}
+.temperature{
+  font-weight: 900;
+  font-size: 4em;
+  color: white;
+  text-align: center;
+}
+.more-info-lable{
+  color: white;
+}
+.more-info-container{
+  flex: 1;
+  background: rgba(231, 221, 221, 0.2);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info-block{
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+.info-block-lable{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* .info-block-lable img{
+  width: 2em;
+} */
+.info-block-lable span{
+  color: white;
+  font-size: 0.8em;
+}
+.info-block-value{
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+.search{
+  margin-bottom: 1em;
+  text-align: center;
+}
+.search input{
+  padding:0.8em;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgb(127, 129, 235);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 0.8em;
+}
+
